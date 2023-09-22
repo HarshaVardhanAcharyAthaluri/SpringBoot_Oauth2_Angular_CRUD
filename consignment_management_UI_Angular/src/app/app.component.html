@@ -1,0 +1,9 @@
+<div class="logoheader">
+  <span class="headercontent">Consignment Management</span>
+  <span class="logout"><button type="button" class="btn btn-outline-light" (click)="logout()">Logout</button></span>
+</div>
+
+  <app-header *ngIf="isLoggedIn"></app-header>
+  <div class="consignments">
+    <router-outlet></router-outlet>
+  </div>
